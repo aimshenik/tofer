@@ -41,12 +41,12 @@ public class ToferController {
 
     @RequestMapping("/cfirst")
     String cnvFirst() {
-        return tofer.requestFirstTkt();
+        return tofer.requestFirstCnv();
     }
 
     @RequestMapping("/clast")
     String cnvLast() {
-        return tofer.requestLastTkt();
+        return tofer.requestLastCnv();
     }
 
     @RequestMapping("/first")
