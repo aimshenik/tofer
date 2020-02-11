@@ -2,11 +2,15 @@ package com.imshenik.tofer.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.imshenik.tofer.service.ToferService;
 
+@CrossOrigin(origins = "*", maxAge = 3600, methods = { RequestMethod.GET
+})
 @RestController
 @EnableAutoConfiguration
 @RequestMapping("/tofer")
