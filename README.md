@@ -2,8 +2,12 @@
 
 Package
 
-1.	set **tcid**, **ip** and **port** in **spring.xml**
-2.	run command **mvn package**
+1.	set **tcid**, **ip** and **port** in **src/main/resources/spring.xml**
+2.	set port (if necessary) in **src/main/resources/application.properties**
+3.	run command **mvn package**
+
+Run
+
 3.	run command **java -jar target/tofer-1.0-SNAPSHOT.jar**
 
 Use
